@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> feedback</title>
+</head>
+<body>
+	<h1 style="text-align: center">Feedback page</h1><hr/>
+	<h3> Enter username to give feedback</h3><br/>
+	
+	<form action="." method="POST">
+		{% csrf_token %}
+
+		<table>{{form.as_table}}</table>
+		<p><input type="submit" value="enter"></p>
+		
+	</form>
+</body>
+</html>
